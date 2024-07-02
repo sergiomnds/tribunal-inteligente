@@ -1,0 +1,70 @@
+{
+    "versao": "0.1",
+    "advogadosPromotores": [
+        {
+            "codigo": "adv001",
+            "nome": "Annalise",
+            "fotos": [
+                "imgs/advogados/annalise1.png",
+                "imgs/advogados/annalise2.png",
+                "imgs/advogados/annalise3.png"
+            ]
+        },
+        {
+            "codigo": "adv002",
+            "nome": "Laurel",
+            "fotos": [
+                "imgs/advogados/laurel1.png",
+                "imgs/advogados/laurel2.png",
+                "imgs/advogados/laurel3.png"
+            ]
+        },
+        {
+            "codigo": "pro001",
+            "nome": "Connor",
+            "fotos": [
+                "imgs/promotores/connor1.png",
+                "imgs/promotores/connor2.png",
+                "imgs/promotores/connor3.png"
+            ]
+        },
+        {
+            "codigo": "pro002",
+            "nome": "Asher",
+            "fotos": [
+                "imgs/promotores/asher1.png",
+                "imgs/promotores/asher2.png",
+                "imgs/promotores/asher3.png"
+            ]
+        }
+    ],
+    "reus": [
+        {
+            "codigo": "reu001",
+            "nome": "Wes",
+            "fotos": [
+                "imgs/reus/wes1.png",
+                "imgs/reus/wes2.png",
+                "imgs/reus/wes3.png"
+            ]
+        },
+        {
+            "codigo": "reu002",
+            "nome": "Michaela",
+            "fotos": [
+                "imgs/reus/michaela1.png",
+                "imgs/reus/michaela2.png",
+                "imgs/reus/michaela3.png"
+            ]
+        },
+        {
+            "codigo": "reu003",
+            "nome": "Frank",
+            "fotos": [
+                "imgs/reus/frank1.png",
+                "imgs/reus/frank2.png",
+                "imgs/reus/frank3.png"
+            ]
+        }
+    ]
+}
