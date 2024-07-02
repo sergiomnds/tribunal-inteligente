@@ -6,7 +6,7 @@ import json
 
 ARQUIVO_DE_CONFIGURACAO = "configuracao.json"
 
-CICLOS_DE_DETECCAO_DE_ADVOGADOS = 40
+CICLOS_DE_DETECCAO_DE_ADVOGADOS_E_REUS = 40
 CICLOS_DE_DETECCAO_DE_REUS = 40
 CICLOS_DE_LIBERACAO_DE_REUS = 60
 CICLOS_DE_DETECCAO_DE_RESERVA_DE_SALAS = 30
@@ -70,8 +70,6 @@ def reconhecer_participantes(ambiente, configuracao, advogados_promotores_reconh
                     advogados_promotores_reconhecidos[advogado_promotor['codigo']
                                                       ] = advogado_promotor
 
-        yield ambiente.timeout(CICLOS_DE_DETECCAO_DE_ADVOGADOS)
-
         reconhecimento_reu, reus = reconhecer_reus_entre_participantes(
             participantes, configuracao)
         if reconhecimento_reu:
@@ -83,7 +81,7 @@ def reconhecer_participantes(ambiente, configuracao, advogados_promotores_reconh
                     reu["em_julgamento"] = True
                     reus_reconhecidos[reu['codigo']] = reu
 
-        yield ambiente.timeout(CICLOS_DE_DETECCAO_DE_REUS)
+        yield ambiente.timeout(CICLOS_DE_DETECCAO_DE_ADVOGADOS_E_REUS)
 
 
 def simular_participacao():
