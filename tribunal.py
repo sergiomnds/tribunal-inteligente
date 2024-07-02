@@ -63,7 +63,7 @@ def reconhecer_participantes(ambiente, configuracao, advogados_promotores_reconh
             for advogado_promotor in advogados_promotores:
                 if not advogado_promotor_trabalhando(advogado_promotor, advogados_promotores_reconhecidos):
                     imprimir(
-                        f"Trabalhos iniciados com o advogado {advogado_promotor['nome']}", 'yellow')
+                        f"Trabalhos iniciados com o advogado/promotor {advogado_promotor['nome']}", 'yellow')
 
                     advogado_promotor["em_tribunal"] = False
                     advogado_promotor["em_sala_de_provas"] = False
