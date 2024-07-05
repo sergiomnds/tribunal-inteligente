@@ -166,6 +166,7 @@ def liberar_reus(ambiente, reus_reconhecidos):
             liberar = (random.randint(1, 100) <=
                        PROBABILIDADE_DE_LIBERACAO_REU) and reu["em_julgamento"]
             if liberar:
+                reu["em_julgamento"] = False
                 reus_reconhecidos.pop(codigo)
 
                 imprimir(
